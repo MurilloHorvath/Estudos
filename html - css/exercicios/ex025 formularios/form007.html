@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="sp">SAO PAULO</option>
+                    <option value="rj">RIO DE JANEIRO</option>
+                    <option value="rs" >RIO GRANDE DO SUL</option>
+                </optgroup>
+
+                <optgroup label="Regiao Nordeste">
+                    <option value="ma">MARANHAO</option>
+                    <option value="pe">PERNAMBUCO</option>
+                    <option value="rn">RIO GRANDE DO NORTE</option>
+                </optgroup>
+                
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
