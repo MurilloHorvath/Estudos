@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*typical device breakpoints
+
+Extra small devices 
+(phones, 600px and down)
+-600px
+
+Small devices 
+(portrait tablets and large phones, 600px and up)
+600px A 768px
+
+Medium devices 
+(landscape tablets, 768px and up)
+768px A 992px
+
+Large devices 
+(laptops/desktops, 992px and up)
+992px A 1200px
+
+Extra large devices 
+(large laptops and desktops, 1200px and up)
++1200px
+
+*/
+
+@media screen and (min-width:768px){
+    span#menu{
+        display: none;
+    }
+    menu#itens{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+}
