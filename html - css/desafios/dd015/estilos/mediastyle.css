@@ -30,6 +30,7 @@ Extra large devices
     }
     section#login{
         width: 80vw;
+        height: 290px;
     }
     section#login > div#imagem{
         float: left;
@@ -51,6 +52,7 @@ Extra large devices
     }
     section#login{
         width: 900px;
+        height: 330px;
     }
     section#login > div#imagem{
         float: right;
@@ -65,6 +67,7 @@ Extra large devices
         font-size: 2em;
     }
     div#formulario > p{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
