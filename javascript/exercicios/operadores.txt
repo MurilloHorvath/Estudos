@@ -1,0 +1,50 @@
+ordem de precedencia
+()
+
+**
+
+* / %
+
++ -
+
+se tiver dois da mesme precedencia, começar 
+o calculo da esquerda para a direita
+
+
+operadores aritimetios
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1     (Divisão real)
+5 ** 2 = 25   (5²)
+
+operadores relacionais
+> (maior que)
+< (menor que)
+>= (maior ou igual que)
+<= (menor ou igual que)
+== (igual que)
+!= (diferente de)
+
+operadores lógicos
+! (Negação)
+! true = false
+! false = true
+
+&& (Conjunção)
+true && true = true
+true && false = false
+false && true = false
+false && false = false
+
+|| (Disjunção)
+true || true = true
+true || false = true
+false || true = true
+false || false = false
+
+operador ternário
+? :
+teste ? true : false
+média >= 7.0 ? "Aprovado" : "Reprovado"
