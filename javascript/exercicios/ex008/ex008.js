@@ -1,1 +1,0 @@
-console.log('O console está funcionando')
