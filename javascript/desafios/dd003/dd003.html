@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio 3</title>
+    <style>
+
+        body{
+            background-color: rgb(80, 37, 119);
+            color: white;
+            font-size: 1.5em;
+        }
+        div{
+            background-color: rgb(43, 43, 43);
+            margin: 10px;
+            width: 250px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Desafio 3</h1>
+    <h2>Antes e Depois</h2>
+    <div onclick="iniciar()">
+        Antecessor e Sucessor
+    </div>
+
+    <script>
+
+        function iniciar(){
+            var num1 = Number(window.prompt('Digite um numero inteiro:'))
+            var num2 = num1 - 1
+            var num3 = num1 + 1
+            window.alert(`Antes de ${num1}, Temos o número ${num2}.\nDepois de ${num1}, Temos o número ${num3}.`)
+        }
+
+    </script>
 </body>
 </html>
