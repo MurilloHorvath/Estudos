@@ -7,11 +7,47 @@
     <title>Desafio 1</title>
     <style>
         body{
-            
+            background-color: rgb(80, 37, 119);
+            color: white;
+            font-size: 1.5em;
         }
+        div{
+            background-color: rgb(37, 37, 37);
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 140px;
+            display: inline-block;
+        }
+
     </style>
 </head>
 <body>
-    
+    <h1>Desafio 1</h1>
+    <h2>Desafio das Mensagens</h2>
+    <div id="botao1" onclick="clickb1()">
+        Botão 1
+    </div>
+    <div id="botao2" onclick="clickb2()">
+        Botão 2
+    </div>
+    <div id="botao3" onclick="clickb3()">
+        Botão 3
+    </div>
+
+    <script>
+        function clickb1(){
+            window.alert('Você clicou no botão 1')
+        }
+        function clickb2(){
+            window.alert('Você clicou no botão 2')
+        }
+        function clickb3(){
+            window.alert('Você clicou no botão 3')
+        }
+
+    </script>
 </body>
 </html>
