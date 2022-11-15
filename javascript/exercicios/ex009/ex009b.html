@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 9b</title>
+    <style>
+        body{
+            background-color: rgb(80, 37, 119);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1em;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo JavaScript</h1>
+    De qual pais voce é?
+    <input type="text" name="txtpais" id="pais">
+    <input type="button" value="Enviar" onclick="iniciar()">
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+
+        function iniciar() {
+            var pais = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var txtpais = String(pais.value)
+
+            res.innerHTML = `Você veio do ${txtpais}`
+            if(txtpais == 'Brasil'){
+                res.innerHTML += '<p>Você é Brasileiro</p>'
+            }else{
+                res.innerHTML += '<p>Você é Estrangeiro</p>'
+            }
+        }
+
+    </script>
+</body>
+</html>
