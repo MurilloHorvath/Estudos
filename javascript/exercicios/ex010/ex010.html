@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 10</title>
+    <style>
+        body{
+            background-color: rgb(80, 37, 119);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo JavaScript</h1>
+    <h2>DETRAN</h2>
+    <h2>Sistema de multas</h2>
+    <p>velocidade do carro</p>
+    <input type="number" name="velocidade" id="vel1">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        RESULTADO
+    </div>
+    <script>
+
+        function calcular(){
+            var tv = window.document.getElementById('vel1')
+            var res = window.document.getElementById('res')
+            var vel = Number(tv.value)
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
+            if (vel > 60){
+                res.innerHTML += 'Você está acima da velocidade permitida... você foi <strong>MULTADO</strong>'
+            }
+            res.innerHTML += '<p>Dirija sempre usando cinto de segurança!</p>'
+        }
+
+    </script>
+</body>
+</html>
