@@ -1,3 +1,6 @@
-nome = str(input('Digite seu Nome: ')).strip()
+textgreen = '\033[32m'
+limpa = '\033[m'
 
-print('Você tem Silva no Nome?', 'SILVA' in nome.upper())
+nome = str(input('Digite seu Nome: {}'.format(textgreen))).strip()
+
+print('{}Você tem Silva no Nome? {}{}{}'.format(limpa,textgreen,'SILVA' in nome.upper(),limpa))
