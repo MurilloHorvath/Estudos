@@ -3,7 +3,7 @@ textred = '\033[31m'
 textgreen = '\033[32m'
 limpa = '\033[m'
 
-vcasa = float(input('Qual é o valor da casa? {}'.format(textgreen)))
+vcasa = float(input('Qual é o valor da casa? {}R$'.format(textgreen)))
 sal = float(input('{}Qual é o salario do comprador? {}R$'.format(limpa,textgreen)))
 anos = float(input('{}Quantos anos para pagar? {}'.format(limpa,textgreen)))
 

@@ -10,7 +10,8 @@ media = (n1 + n2) / 2
 
 if media<5.0:
     print('{}REPROVADO{}'.format(textred,limpa))
-elif media>=5.0 and media<=6.9:
+elif 5.0<=media>=6.9:
     print('{}RECUPERAÇÃO{}'.format(textyellow,limpa))
 else:
     print('{}APROVADO{}'.format(textgreen,limpa))
+    
