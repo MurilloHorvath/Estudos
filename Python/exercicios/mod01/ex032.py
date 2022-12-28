@@ -4,6 +4,7 @@ textyellow = '\033[33m'
 limpa = '\033[m'
 
 from datetime import date
+
 ano = int(input('Digite um ano que deseja analisar: {}'.format(textyellow)))
 
 if ano == 0:
