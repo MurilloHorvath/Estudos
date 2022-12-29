@@ -8,3 +8,4 @@ if s == 2:
     print('O Número é PRIMO')
 else:
     print('O Número NÃO é primo')
+    
