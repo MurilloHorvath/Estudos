@@ -1,11 +1,9 @@
-a = int(input('Digite o valor do primeiro termo: '))
-r = int(input('Digite o valor da razão: '))
-c = 0
-x = 0
-while c != 1:
-    res = a + x * r
-    x+=1
+a = int(input('Primeiro termo da PA: '))
+r = int(input('Razão da PA: '))
+c = 1
+res = a
+while c <= 10:
     print(res,end='->')
-    if x == 10:
-        print('Fim')
-        c+=1
+    res+=r
+    c+=1
+print('Fim')
