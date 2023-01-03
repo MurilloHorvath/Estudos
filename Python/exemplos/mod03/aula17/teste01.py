@@ -1,0 +1,25 @@
+num = [2,5,9,1]
+print('A minha lista:',num)
+num[2] = 3
+print('alterei o valor da posição 2:',num)
+num.append(7)
+print('Adicionei o valor 7:',num)
+num.sort()
+print('Deixei a lista em ordem crescente:',num)
+num.sort(reverse=True)
+print('Agora em ordem decrescente:',num)
+num.insert(2, 0)
+print('Adicionei o valor 0 na posição 2 :',num)
+num.pop()
+print('Removi o ultimo valor:',num)
+num.pop(2)
+print('Removi o valor da posição 2 :',num)
+num.insert(0,2)
+print('Adicionei o valor 2 na posição 0 :',num)
+num.remove(2)
+print('Removi o valor 2:',num)
+if 4 in num:
+    num.remove(4)
+else:
+    print('Não achei o número 4 na lista')
+print(f'Esta lista tem {len(num)} elementos.')
