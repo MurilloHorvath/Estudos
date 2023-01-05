@@ -4,10 +4,10 @@ lista = list()
 dados = list()
 jogos = int(input('Quantos jogos você quer gerar? '))
 for j in range(0,jogos):
-    for n in range(0,6):
-        num = randint(1,60)
+    for n in range(0,16):
+        num = randint(1,25)
         while num in dados:
-            num = randint(1,60)
+            num = randint(1,25)
         dados.append(num)
     lista.append(dados[:])
     dados.clear()
