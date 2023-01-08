@@ -1,18 +1,33 @@
+from time import sleep
+c = ('\033[m',        # 0 - SEM CORES
+     '\033[0;30;41m', # 1 - VERMELHO
+     '\033[0;30;42m', # 2 - VERDE 
+     '\033[0;30;43m', # 3 - AMARELO
+     ) 
 
 def teste(text):
-    comando = f" Acessando o manual do comando '{text}' "
-    print('\33[46m-\33[m'*len(comando))
-    print(f'\33[46m{comando}\33[m')
-    print('\33[46m-\33[m'*len(comando))
+    titulo(f'Acessando o manual do comando \'{text}\'',2)
+    print(c[3],end='')
     help(text)
+    print(c[0],end='')
+    sleep(2)
 
+def titulo(msg,cor=0):
+    tam = len(msg)+4
+    print(c[cor],end='')
+    print('-'*tam)
+    print(f'  {msg}  ')
+    print('-'*tam)
+    print(c[0],end='')
+    sleep(1)
 
+func = ''
 while True:
-    print('\33[43m-\33[m'*25)
-    print('\33[43m Sistema de ajuda PyHelp \33[m')
-    print('\33[43m-\33[m'*25)
+    titulo('Sistema de ajuda PyHelp', 1)
     func = str(input('Função ou Biblioteca > '))
-    teste(func)
-    cont = str(input('Deseja continuar?'))
-    if cont in 'Nn':
+    if func.upper() in 'FIM':
         break
+    else:
+        teste(func)
+
+titulo('ATÉ LOGO', 1)

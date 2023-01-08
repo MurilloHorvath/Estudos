@@ -1,4 +1,3 @@
-
 def leiaint(text):
     n = input(f'{text}')
     while n.isnumeric() == False:
