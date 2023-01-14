@@ -1,10 +1,30 @@
 [
     {
-        "nome":"Murillo",
-        "senha":"123"
+        "nome": "Murillo",
+        "senha": "123"
     },
     {
-        "nome":"Ricardo",
-        "senha":"456"
+        "nome": "Ricardo",
+        "senha": "456"
+    },
+    {
+        "nome": "Maria",
+        "senha": "1234"
+    },
+    {
+        "nome": "Jasmin",
+        "senha": "12345"
+    },
+    {
+        "nome": "Matheus",
+        "senha": "846"
+    },
+    {
+        "nome": "Jo\u00e3o",
+        "senha": "462"
+    },
+    {
+        "nome": "Guilherme",
+        "senha": "1956"
     }
 ]

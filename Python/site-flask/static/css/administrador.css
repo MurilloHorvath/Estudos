@@ -1,0 +1,59 @@
+
+@import url(home.css);
+
+h1#titulo_adm{
+    font-size: 0.8rem;
+    color: white;
+    text-align: right;
+}
+
+div#form_fundo{
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+div#usuarios-fundo{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    overflow: hidden;
+
+    background-color: #211D26;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+    transform: translate(-50%,-50%);
+}
+
+div#usuarios-fundo > h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+div#lista-usuarios-fundo{
+    background-color: white;
+    padding: 0px;
+    margin: 0px 15px 0px 15px;
+    border-radius: 0px 0px 10px 10px;
+    width: 420px;
+    height: 220px;
+    text-align: left;
+}
+
+div#lista{
+    padding: 10px;
+    overflow-y: scroll;
+    height: 210px;
+}
+
+div#lista > ul > li{
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

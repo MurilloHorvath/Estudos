@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="../static/css/administrador.css">
+</head>
+<body>
+    <main>
+        {% set menssagem = get_flashed_messages() %}
+        {% if menssagem %}
+            <div class="flash_alerta">
+                {{menssagem[0]}}
+            </div>
+        {% endif %}
+        <h1 id="titulo_adm">Administrador</h1>
+        <div id="form_fundo">
+            <h1>CADASTRAR USUARIO</h1>
+            <div id="form_frente">
+                <form action="/cadastrarUsuario" id="login" method="post">
+                    <div class="campo">
+                        <label for="nome">NOME:</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome"><br>
+                    </div>
+                    <div class="campo">
+                        <label for="senha" id="senha">SENHA:</label>
+                        <input type="text" name="senha" id="senha" required placeholder="Digite sua Senha"><br>
+                    </div>
+                    <button type="submit" id="btn_login">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>CADASTRAR
+        
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div id="usuarios-fundo">
+           <h1>USUARIOS CADASTRADOS</h1> 
+           <div id="lista-usuarios-fundo">
+                <div id="lista">
+                    {% if usuarios%}
+                        {% for c in usuarios%}
+                            <ul>
+                                <li>Usuário:{{c['nome']}} Senha:{{c['senha']}}</li>
+                                <br>
+                            </ul>
+                        {% endfor%}
+                    {% else %}
+                    <h1>Não existe usuarios cadastrados</h1>
+                    {% endif %}
+                </div>
+           </div>
+        </div>
+    </main>
+</body>
+</html>

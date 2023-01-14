@@ -19,7 +19,7 @@ main{
 
 .flash_alerta{
     position: absolute;
-    top: 11%;
+    top: 25%;
     left: 50%;
     width: 300px;
 
@@ -41,12 +41,13 @@ div#form_fundo{
 
     background-color: #211D26;
     width: 450px;
-    height: 480px;
+    height: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
     transform: translate(-50%,-50%);
 }
 div#form_fundo > h1{
+    font-size: 1.5rem;
     text-align: center;
     color: white;
     margin-top: 30px;
