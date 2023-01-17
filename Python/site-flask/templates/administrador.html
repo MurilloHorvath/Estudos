@@ -44,10 +44,15 @@
                 <div id="lista">
                     {% if usuarios%}
                         {% for c in usuarios%}
+                        <form action="/excluirUsuario" method="post">
                             <ul>
-                                <li>Usuário:{{c['nome']}} Senha:{{c['senha']}}</li>
+                                <input type="hidden" name="Usuario_Para_Excluir" value="{{c}}">
+                                <li>Usuário:{{c['nome']}}</li>
+                                <li>Senha:{{c['senha']}}</li>
                                 <br>
                             </ul>
+                            <button type="submit">Excluir Usuário</button>
+                        </form>
                         {% endfor%}
                     {% else %}
                     <h1>Não existe usuarios cadastrados</h1>

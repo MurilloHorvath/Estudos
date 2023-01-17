@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, flash
 import json
+import ast
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '123456'
@@ -51,6 +52,7 @@ def login():
 
 @app.route('/cadastrarUsuario', methods=['POST'])
 def cadastrarUsuario():
+    global logado
     user = []
     nome = request.form.get('nome')
     senha = request.form.get('senha')
@@ -69,7 +71,28 @@ def cadastrarUsuario():
     with open('usuarios.json', 'w') as gravarTemp:
         json.dump( usuarioNovo, gravarTemp, indent=4 )
 
+    logado = True
+    flash(f'Usuário {nome} Cadastrado')
     return redirect("/adm")
+
+@app.route('/excluirUsuario', methods=['POST'])
+def excluirUsuário():
+    global logado
+    logado = True
+    usuario = request.form.get('Usuario_Para_Excluir')
+    usuarioDict = ast.literal_eval(usuario)
+    nome = usuarioDict['nome']
+
+    with open('usuarios.json') as usuariosTemp:
+        usuariosJson = json.load(usuariosTemp)
+        for c in usuariosJson:
+            if c == usuarioDict:
+                usuariosJson.remove(usuarioDict)
+                with open('usuarios.json', 'w') as usuarioAexcluir:
+                    json.dump(usuariosJson, usuarioAexcluir, indent=4)
+
+    flash(f'Usuário {nome} Excluido')
+    return redirect('/adm')
 
 
 
