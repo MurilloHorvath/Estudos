@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>Administrador</title>
     <link rel="stylesheet" href="../static/css/administrador.css">
 </head>
 <body>
     <main>
         {% set menssagem = get_flashed_messages() %}
         {% if menssagem %}
-            <div class="flash_alerta">
+            <div class="flash_alerta" id="flash_alerta-adm">
                 {{menssagem[0]}}
             </div>
         {% endif %}
         <h1 id="titulo_adm">Administrador</h1>
-        <div id="form_fundo">
+        <div class="form-fundo" id="cadastrar-fundo">
             <h1>CADASTRAR USUARIO</h1>
-            <div id="form_frente">
+            <div class="form-frente" id="cadastrar-frente">
                 <form action="/cadastrarUsuario" id="login" method="post">
                     <div class="campo">
                         <label for="nome">NOME:</label>
@@ -38,9 +38,9 @@
                 </form>
             </div>
         </div>
-        <div id="usuarios-fundo">
+        <div class="form-fundo" id="usuarios-fundo">
            <h1>USUARIOS CADASTRADOS</h1> 
-           <div id="lista-usuarios-fundo">
+           <div class="form-frente" id="usuarios-frente">
                 <div id="lista">
                     {% if usuarios%}
                         {% for c in usuarios%}
@@ -49,9 +49,8 @@
                                 <input type="hidden" name="Usuario_Para_Excluir" value="{{c}}">
                                 <li>Usuário:{{c['nome']}}</li>
                                 <li>Senha:{{c['senha']}}</li>
-                                <br>
                             </ul>
-                            <button type="submit">Excluir Usuário</button>
+                            <button id="btn-excluir-usuario"type="submit">Excluir Usuário</button>
                         </form>
                         {% endfor%}
                     {% else %}
@@ -59,6 +58,15 @@
                     {% endif %}
                 </div>
            </div>
+        </div>
+        <div class="form-fundo" id="upload-fundo">
+            <h1>ENVIAR ARQUIVOS</h1>
+            <div class="form-frente" id="upload-frente">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="documento" id="documento">
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
         </div>
     </main>
 </body>

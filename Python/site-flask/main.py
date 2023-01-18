@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, request, flash
 import json
 import ast
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '123456'
@@ -94,7 +95,17 @@ def excluirUsuário():
     flash(f'Usuário {nome} Excluido')
     return redirect('/adm')
 
+@app.route("/upload", methods=['POST'])
+def upload():
+    global logado
+    logado = True
 
+    arquivo = request.files.get('documento')
+    nome_arquivo = arquivo.filename.replace(' ' , "_")
+    arquivo.save(os.path.join('arquivos', nome_arquivo))
+
+    flash('Arquivo Enviado')
+    return redirect('/adm')
 
 
 if __name__ in "__main__":
