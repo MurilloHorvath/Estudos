@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, flash, send_from_di
 import json
 import ast
 import os
+import mysql.connector
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '123456'
@@ -27,29 +28,38 @@ def adm():
 
 @app.route('/login', methods=['POST'])
 def login():
-
     global logado
 
     nome = request.form.get('nome')
     senha = request.form.get('senha')
 
-    with open('usuarios.json') as usuariosTemp:
-        usuarios = json.load(usuariosTemp)
+    conect_BD = mysql.connector.connect(host='localhost', database='usuarios', user='root', password='')
+    cont = 0
+    if conect_BD.is_connected():
+        print('conectado')
+        cursur = conect_BD.cursor()
+        cursur.execute('select * from usuario;')
 
-        cont = 0
-        for usuario in usuarios:
+        usuariosBD = cursur.fetchall
+
+        for usuario in usuariosBD:
             cont+=1
+            usuarioNome = str(usuario[1])
+            usuarioSenha = str(usuario[2])
+
             if nome == 'adm' and senha == '000':
                 logado = True
                 return redirect('/adm')
 
-            if usuario['nome'] == nome and usuario['senha'] == senha:
+            if usuarioNome == nome and usuarioSenha == senha:
                 logado = True
                 return redirect("/usuario")
             
-            if cont>=len(usuarios):
+            if cont>=len(usuariosBD):
                 flash('Usuario Inválido')
                 return redirect("/")
+    else:
+        return redirect('/')
 
 @app.route('/usuario')
 def usuario():
