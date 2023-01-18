@@ -2,6 +2,10 @@
 
 #login-fundo{
     position: relative;
-    top: 43%;
+    top: 40%;
     left: 50%;
+}
+
+#flash_login{
+    top: 20%;
 }

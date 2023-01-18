@@ -11,7 +11,7 @@
     <main>
         {% set menssagem = get_flashed_messages() %}
         {% if menssagem %}
-            <div class="flash_alerta">
+            <div class="flash_alerta" id="flash_login">
                 {{menssagem[0]}}
             </div>
         {% endif %}

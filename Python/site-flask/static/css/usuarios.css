@@ -1,0 +1,40 @@
+@import url(style.css);
+
+#usuarios-tela{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 75%;
+}
+
+#usuarios-tela-frente{
+    background-color: white;
+    height: 370px;
+    margin: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#usuarios-tela-frente>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#usuarios-tela-frente>form>div>select{
+    margin-top: 0px;
+    height: 20px;
+    width: 175px;
+}
+
+#usuarios-tela-frente>form>div>button{
+    margin-top: 0px;
+    width: 100px;
+    height: 20px;
+}
+
+#download-arquivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 20px;
+}

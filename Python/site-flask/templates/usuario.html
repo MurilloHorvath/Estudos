@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USUARIO</title>
+    <link rel="stylesheet" href="../static/css/usuarios.css">
 </head>
 <body>
-    <h1>Parabens você está logado</h1>
+    <main>
+        <div class="form-fundo" id="usuarios-tela">
+            <h1>Parabens você está logado</h1>
+            <div class="form-frente" id="usuarios-tela-frente">
+                {% if arquivos %}
+                    <h1>Arquivos para Download</h1>
+                    <form action="/download" method="post">
+                        <div id="download-arquivo">
+                            <select name="arquivosParaDownload" id="arquivosParaDownload">
+                                {% for documento in arquivos %}
+                                    <option value="{{documento}}">{{documento}}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit">DOWNLOAD</button>
+                        </div>
+                    </form>
+                {% else %}
+                    <h1>Sem Arquivos para Download</h1>
+                {% endif %}
+            </div>
+        </div>
+    </main>
 </body>
 </html>

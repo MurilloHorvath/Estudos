@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request, flash
+from flask import Flask, render_template, redirect, request, flash, send_from_directory
 import json
 import ast
 import os
@@ -44,11 +44,24 @@ def login():
                 return redirect('/adm')
 
             if usuario['nome'] == nome and usuario['senha'] == senha:
-                return render_template("usuario.html")
+                logado = True
+                return redirect("/usuario")
             
             if cont>=len(usuarios):
                 flash('Usuario Inválido')
                 return redirect("/")
+
+@app.route('/usuario')
+def usuario():
+    if logado == True:
+        arquivo = []
+        for documento in os.listdir('arquivos'):
+            arquivo.append(documento)
+        return render_template("usuario.html", arquivos=arquivo)
+    
+    else:
+
+        return redirect("/")
 
 
 @app.route('/cadastrarUsuario', methods=['POST'])
@@ -106,6 +119,14 @@ def upload():
 
     flash('Arquivo Enviado')
     return redirect('/adm')
+
+@app.route('/download', methods=['POST'])
+def download():
+    nomeArquivo = request.form.get('arquivosParaDownload')
+
+    return send_from_directory('arquivos', nomeArquivo, as_attachment=True)
+
+
 
 
 if __name__ in "__main__":
