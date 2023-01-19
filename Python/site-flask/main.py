@@ -19,9 +19,16 @@ def home():
 @app.route('/adm')
 def adm():
     if logado == True:
-        with open('usuarios.json') as usuariosTemp:
-            usuarios = json.load(usuariosTemp)
+        conect_BD = mysql.connector.connect(host='localhost', database='usuarios', user='root', password='')
+        
+        if conect_BD.is_connected():
+            print('conectado')
+            cursur = conect_BD.cursor()
+            cursur.execute('select * from usuario;')
+            usuarios = cursur.fetchall()
+        
         return render_template("administrador.html",usuarios=usuarios)
+    
     if logado == False:
         return redirect('/')
 
@@ -40,7 +47,7 @@ def login():
         cursur = conect_BD.cursor()
         cursur.execute('select * from usuario;')
 
-        usuariosBD = cursur.fetchall
+        usuariosBD = cursur.fetchall()
 
         for usuario in usuariosBD:
             cont+=1
@@ -61,6 +68,7 @@ def login():
     else:
         return redirect('/')
 
+
 @app.route('/usuario')
 def usuario():
     if logado == True:
@@ -80,43 +88,43 @@ def cadastrarUsuario():
     user = []
     nome = request.form.get('nome')
     senha = request.form.get('senha')
-    user = [
-        {
-            "nome": nome,
-            "senha": senha
-        }
-    ]
+   
+    conect_BD = mysql.connector.connect(host='localhost', database='usuarios', user='root', password='')
 
-    with open('usuarios.json') as usuariosTemp:
-        usuarios = json.load(usuariosTemp)
+    if conect_BD.is_connected():
+        cursur = conect_BD.cursor()
+        cursur.execute(f"insert into usuario values(default,'{nome}','{senha}');")
 
-    usuarioNovo = usuarios + user
-
-    with open('usuarios.json', 'w') as gravarTemp:
-        json.dump( usuarioNovo, gravarTemp, indent=4 )
+    if conect_BD.is_connected():
+        cursur.close()
+        conect_BD.close()
 
     logado = True
     flash(f'Usuário {nome} Cadastrado')
     return redirect("/adm")
 
+
 @app.route('/excluirUsuario', methods=['POST'])
 def excluirUsuário():
     global logado
     logado = True
-    usuario = request.form.get('Usuario_Para_Excluir')
-    usuarioDict = ast.literal_eval(usuario)
-    nome = usuarioDict['nome']
 
-    with open('usuarios.json') as usuariosTemp:
-        usuariosJson = json.load(usuariosTemp)
-        for c in usuariosJson:
-            if c == usuarioDict:
-                usuariosJson.remove(usuarioDict)
-                with open('usuarios.json', 'w') as usuarioAexcluir:
-                    json.dump(usuariosJson, usuarioAexcluir, indent=4)
+    usuarioID = request.form.get('Usuario_Para_Excluir')
+    nome = request.form.get('nome')
+
+    conect_BD = mysql.connector.connect(host='localhost', database='usuarios', user='root', password='')
+
+    if conect_BD.is_connected():
+        cursur = conect_BD.cursor()
+        cursur.execute(f"delete from usuario where id='{usuarioID}';")
+
+    if conect_BD.is_connected():
+        cursur.close()
+        conect_BD.close()
 
     flash(f'Usuário {nome} Excluido')
     return redirect('/adm')
+
 
 @app.route("/upload", methods=['POST'])
 def upload():
@@ -129,6 +137,7 @@ def upload():
 
     flash('Arquivo Enviado')
     return redirect('/adm')
+
 
 @app.route('/download', methods=['POST'])
 def download():
