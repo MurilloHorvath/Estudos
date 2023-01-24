@@ -25,6 +25,11 @@ header{
     width: 100%;
 }
 
+/* hide on desktop */
+.nav-container .btn-menumobile {
+    display: none;
+}
+
 /* navbar */
 nav{
     position: fixed;
@@ -117,7 +122,7 @@ nav::after{
     margin: 0 10px;
 }
 
-#search-form input[type=submit]{
+#search-form input[type=submit], #sendjobs input[type=submit] {
     background-color: #3381f3;
     text-transform: uppercase;
     color: #fff;
@@ -125,7 +130,7 @@ nav::after{
     transition: 0.5s;
 }
 
-#search-form input[type=submit]:hover{
+#search-form input[type=submit]:hover, #sendjobs input[type=submit]:hover {
     background-color: #2b79eb;
 }
 
