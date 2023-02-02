@@ -1,0 +1,10 @@
+{
+    "nome": "Murillo",
+    "idade": 19,
+    "hobbies": ["Academia","Estudar"],
+    "esta_trabalhando": false,
+    "detalhes_profissao":{
+        "prodissao": null,
+        "empresa": null
+    }
+}
