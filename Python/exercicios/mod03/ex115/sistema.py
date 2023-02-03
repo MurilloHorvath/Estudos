@@ -2,7 +2,7 @@ from lib.interface import *
 from lib.arquivo import *
 from time import sleep
 
-arq = 'exercicios/mod03/ex115/pessoas.txt'
+arq = 'pessoas.txt'
 if not arquivoExiste(arq):
     criarArquivo(arq)
 
