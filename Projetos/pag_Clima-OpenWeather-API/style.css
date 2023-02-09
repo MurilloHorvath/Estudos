@@ -84,13 +84,18 @@ body {
     margin: 0.6rem 0;
 }
 
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 #details-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#details-container #unidity {
+#details-container #humidity {
     border-right: 1px solid #fff;
     margin: 0.6rem;
     padding: 0.6rem;
