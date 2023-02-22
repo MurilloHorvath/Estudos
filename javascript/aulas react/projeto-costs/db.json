@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "meu projeto",
-      "budget": "20000",
+      "name": "projeto atualizado",
+      "budget": "150000",
       "category": {
-        "id": "1",
-        "name": "infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
@@ -18,9 +18,27 @@
         "id": "4",
         "name": "Planejamento"
       },
+      "cost": 1000,
+      "services": [
+        {
+          "name": "serviço 1",
+          "cost": "1000",
+          "description": "descrição do serviço 1",
+          "id": "d2ca65cf-98a6-460f-9bf5-70d2c3e04c04"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "teste",
+      "budget": "2000",
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
       "cost": 0,
       "services": [],
-      "id": 6
+      "id": 7
     }
   ],
   "categories": [
