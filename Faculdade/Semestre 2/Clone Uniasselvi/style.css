@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    background-color: #fd0;
+}
+
+header{
+    text-align: right;
+    height: 75px;
+    padding: 15px;
+}
+
+a.bot-simples, a#bot-ambiente{
+    margin: 15px;
+}
+
+a.bot-simples{
+    color: black;
+}
+
+a#bot-ambiente{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px 10px 25px;
+    border-radius: 7px;
+}
+
+main{
+    text-align: center;
+}
+
+#barra-de-pesquisa{
+    background-color: white;
+    margin: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.barra-pesquisa{
+    display: inline-block;
+}
+
+input[type="text"]{
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+
+
+#lupa{
+    color: black;
+}
+
+#emote, #chapeu{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#emote>img, #chapeu>img{
+    width: 25px;
+    height: 100%;
+}

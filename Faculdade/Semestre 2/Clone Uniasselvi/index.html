@@ -7,24 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="cabeçalho">
-        <a href="">Bibliotecas</a>
-        <a href="">Alunos</a>
-        <a href="">x</a>
-        <a href="">Ambiente Virtual</a>
-    </div>
-    <div id="corpo">
-        <div id="logo"></div>
-        <div id="barra-de-pesquisa">
-            <div id="lupa">a</div>
-            <input type="text" name="" id="">
-            <div id="emote">b</div>
-            <div id="chapeu">c</div>
+    <header> 
+        <a href="https://portal.uniasselvi.com.br/graduacao/alunos/bibliotecas" class="bot-simples">Bibliotecas</a>
+        <a href="https://portal.uniasselvi.com.br/graduacao/alunos" class="bot-simples">Alunos</a>
+        <a href="#">x</a>
+        <a href="https://login.uniasselvi.com.br/" id="bot-ambiente">Ambiente Virtual</a> 
+    </header>
+    <main>
+        <div id="corpo">
+            <div id="logo">
+                <img src="https://portal.uniasselvi.com.br/public/img/site/logo.png" alt="Logo Uniasselvi">
+            </div>
+            <div id="barra-de-pesquisa">
+                <div class="barra-pesquisa" id="lupa">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </div>
+                <input type="text" name="" class="barra-pesquisa" id="">
+                <div class="barra-pesquisa" id="emote">
+                    <img src="https://eutraining.eu/sites/all/libraries/ckeditor/plugins/smiley/images/wink_smile.png" alt="">
+                </div>
+                <div class="barra-pesquisa" id="chapeu">
+                    <img src="https://i.pinimg.com/originals/ce/a2/72/cea2728d2248df5d09f6104db64ea2be.png" alt="">
+                </div>
+            </div>
+            <div id="botoes">
+                <a href="">Pesquisa Uniasselvi</a>
+                <a href="">Inscreva-se</a>
+            </div>
         </div>
-        <div id="botoes">
-            <a href="">Pesquisa Uniasselvi</a>
-            <a href="">Inscreva-se</a>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
