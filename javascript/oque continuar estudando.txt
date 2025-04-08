@@ -1,8 +1,0 @@
-functions = arrow functions, callbacks, 
-iife, funçoes anonimas, javascript funcional
-objetos = 
-modularização =
-RegEx = 
-JSON = 
-AJAX =
-NodeJS =
