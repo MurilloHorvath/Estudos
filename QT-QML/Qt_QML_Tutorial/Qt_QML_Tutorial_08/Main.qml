@@ -2,7 +2,7 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 
-Window {
+Window{
   width: 640
   height: 480
   visible: true
@@ -11,8 +11,8 @@ Window {
   SpinBox{
     id: mySpinBox
     anchors.centerIn: parent
-    from: 0 // valor minimo
-    to: 100// valor maximo
+    from: 0
+    to: 100
     stepSize: 10
     editable: true
     width: 200
@@ -26,12 +26,11 @@ Window {
     onValueChanged: {
       console.log("SpinBox Value Is : ", mySpinBox.value)
     }
-
     background: Rectangle{
-      border.color: "#1e272e"
-      border.width: 5
+      color: "lightsteelblue"
+      border.color: "darkblue"
+      border.width: 2
       radius: 25
     }
   }
 }
-
