@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 03")
+  title: qsTr("Tutorial 03 CheckBox Control")
 
   CheckBox{
     id: myCheckBox

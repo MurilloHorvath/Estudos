@@ -7,7 +7,7 @@ Window {
     width: 640
     height: 480
     visible: true
-    title: qsTr("Tutorial 15")
+    title: qsTr("Tutorial 15 File Dialog")
 
     Button{
         id: myButton

@@ -6,7 +6,7 @@ Window{
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 08")
+  title: qsTr("Tutorial 08 SpinBox Control")
 
   SpinBox{
     id: mySpinBox

@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 09")
+  title: qsTr("Tutorial 09 Switch Control")
 
   Switch{
     id: mySwich

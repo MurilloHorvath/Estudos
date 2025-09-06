@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 06")
+  title: qsTr("Tutorial 06 GroupBox Control")
 
   GroupBox{
     anchors.centerIn: parent

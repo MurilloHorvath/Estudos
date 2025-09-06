@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 05")
+  title: qsTr("Tutorial 05 TextField Control")
 
   TextField{
     id: myTextField

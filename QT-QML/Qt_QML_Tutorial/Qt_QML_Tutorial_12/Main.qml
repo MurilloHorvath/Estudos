@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 12")
+  title: qsTr("Tutorial 12 Label Control")
 
   Label{
     id: myLabel

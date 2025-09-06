@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 11")
+  title: qsTr("Tutorial 11 ProgressBar Control")
 
   Column{
     spacing: 20

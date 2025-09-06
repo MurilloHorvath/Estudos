@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 2")
+  title: qsTr("Tutorial 2 Button Control")
 
   Button{
     id: myButton

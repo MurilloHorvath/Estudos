@@ -7,7 +7,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 13")
+  title: qsTr("Tutorial 13 Message Dialog")
 
   Row{
     spacing: 20

@@ -1,2 +1,2 @@
 # Estudos
- Estudos relacionados a Desenvolvimento e Progrmação de diferentes Linguagens
+ Estudos relacionados a Desenvolvimento e Programação de diferentes Linguagens

@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 07")
+  title: qsTr("Tutorial 07 Radio Button Control") 
 
   Row{
     anchors.centerIn: parent

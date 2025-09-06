@@ -6,7 +6,7 @@ Window {
   width: 640
   height: 480
   visible: true
-  title: qsTr("Tutorial 10")
+  title: qsTr("Tutorial 10 Slider Control")
 
   Column{
     spacing: 20
