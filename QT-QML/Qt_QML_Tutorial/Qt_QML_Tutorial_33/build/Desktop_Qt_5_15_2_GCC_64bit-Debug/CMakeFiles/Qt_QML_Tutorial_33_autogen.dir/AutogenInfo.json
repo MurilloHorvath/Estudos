@@ -1,0 +1,79 @@
+{
+	"BUILD_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/Qt_QML_Tutorial_33_autogen",
+	"CMAKE_BINARY_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/Qt_QML_Tutorial_33_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/Qt_QML_Tutorial_33_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_QMLMODELS_LIB",
+		"QT_QML_LIB",
+		"QT_QUICK_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/skydrones/Qt/5.15.2/gcc_64/include",
+		"/home/skydrones/Qt/5.15.2/gcc_64/include/QtCore",
+		"/home/skydrones/Qt/5.15.2/gcc_64/mkspecs/linux-g++",
+		"/home/skydrones/Qt/5.15.2/gcc_64/include/QtQuick",
+		"/home/skydrones/Qt/5.15.2/gcc_64/include/QtQmlModels",
+		"/home/skydrones/Qt/5.15.2/gcc_64/include/QtQml",
+		"/home/skydrones/Qt/5.15.2/gcc_64/include/QtNetwork",
+		"/home/skydrones/Qt/5.15.2/gcc_64/include/QtGui",
+		"/usr/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/g++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/Qt_QML_Tutorial_33_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/Qt_QML_Tutorial_33_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/skydrones/Qt/5.15.2/gcc_64/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/Qt_QML_Tutorial_33_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/main.cpp",
+			"MU"
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

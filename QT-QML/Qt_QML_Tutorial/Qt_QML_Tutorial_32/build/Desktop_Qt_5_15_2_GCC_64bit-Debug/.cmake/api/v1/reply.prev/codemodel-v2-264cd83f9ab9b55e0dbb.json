@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Qt_QML_Tutorial_32",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt_QML_Tutorial_32::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt_QML_Tutorial_32-Debug-cafabaa2aff7e175bc6f.json",
+					"name" : "Qt_QML_Tutorial_32",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt_QML_Tutorial_32_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt_QML_Tutorial_32_autogen-Debug-eed2092cb829571b034a.json",
+					"name" : "Qt_QML_Tutorial_32_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug",
+		"source" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

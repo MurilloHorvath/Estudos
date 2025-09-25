@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/Qt_QML_Tutorial_33_autogen",
+	"CMAKE_BINARY_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33",
+	"CMAKE_SOURCE_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33",
+	"INCLUDE_DIR" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/Qt_QML_Tutorial_33_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/AppTheme.qml",
+		"/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/main.qml"
+	],
+	"LOCK_FILE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/Qt_QML_Tutorial_33_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/home/skydrones/Qt/5.15.2/gcc_64/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/Qt_QML_Tutorial_33_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_33/qml.qrc",
+	"VERBOSITY" : 0
+}
