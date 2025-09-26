@@ -1,0 +1,18 @@
+.home {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #F6EDE8;
+}   
+
+.homeTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.homeDescription {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}

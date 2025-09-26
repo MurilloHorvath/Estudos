@@ -5,8 +5,6 @@ import Container from "./Container"
 import styles from "./Navbar.module.css"
 
 import logo from "../../public/logo.png"
-//import logo from "../../public/Conselho-Tutelar-Logo-Vector/ConselhoTutelarLogoVector.svg"
-//import logo from "../../public/"
 
 function Navbar() {
     return(

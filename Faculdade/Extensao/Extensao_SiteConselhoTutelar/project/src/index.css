@@ -8,4 +8,6 @@
 html, body, #root {
   background-color: #FAFAFA;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }

@@ -6,9 +6,10 @@
 
 .footer {
     background-color: #505050;
-    color: #fff;
-    padding: 3em;
+    color: #FFFFFF;
+    padding: 2rem;
     text-align: center;
+    margin-top: auto;
 }
 
 .text {

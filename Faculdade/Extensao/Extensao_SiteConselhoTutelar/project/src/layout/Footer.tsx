@@ -1,5 +1,3 @@
-import Container from "./Container"
-
 import styles from "./Footer.module.css"
 
 import assin from "../assets/imagem-legal.jpg"

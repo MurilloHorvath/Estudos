@@ -1,0 +1,27 @@
+.contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #F6EDE8;
+}
+
+.contactTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contactDescription {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.contactList {
+    list-style-type: disc;
+    padding: 1rem;
+}
+
+.contactListItem {
+    margin-bottom: 0.5rem;
+}
