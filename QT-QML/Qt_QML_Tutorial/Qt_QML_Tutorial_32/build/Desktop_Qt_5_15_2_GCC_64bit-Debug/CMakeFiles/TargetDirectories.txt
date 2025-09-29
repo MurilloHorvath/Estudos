@@ -1,8 +1,0 @@
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/install/strip.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/install/local.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/install.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/list_install_components.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/Qt_QML_Tutorial_32.dir
-/home/skydrones/00_MurilloSD/00_QT-QML/tutorials/Qt_QML_Tutorial_32/build/Desktop_Qt_5_15_2_GCC_64bit-Debug/CMakeFiles/Qt_QML_Tutorial_32_autogen.dir
