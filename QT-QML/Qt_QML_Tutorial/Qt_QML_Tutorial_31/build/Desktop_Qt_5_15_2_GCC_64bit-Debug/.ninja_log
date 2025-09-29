@@ -1,0 +1,8 @@
+# ninja log v5
+0	24	0	CMakeFiles/Qt_QML_Tutorial_31_autogen	245d1416dab4eb96
+0	24	0	Qt_QML_Tutorial_31_autogen/mocs_compilation.cpp	245d1416dab4eb96
+24	44	1757356627734081111	Qt_QML_Tutorial_31_autogen/EWIEGA46WW/qrc_qml.cpp	6c769c3187a0cc02
+44	83	1757356627770082607	CMakeFiles/Qt_QML_Tutorial_31.dir/Qt_QML_Tutorial_31_autogen/mocs_compilation.cpp.o	2f3ab06e0b44e97f
+45	297	1757356627986091580	CMakeFiles/Qt_QML_Tutorial_31.dir/Qt_QML_Tutorial_31_autogen/EWIEGA46WW/qrc_qml.cpp.o	f14cffc828a382dd
+44	1762	1757356629450152337	CMakeFiles/Qt_QML_Tutorial_31.dir/main.cpp.o	73240ca3f863ffc2
+1763	2127	1757356629814167435	Qt_QML_Tutorial_31	bfdef13b44c43836
