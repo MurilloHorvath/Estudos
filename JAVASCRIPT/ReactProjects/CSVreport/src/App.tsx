@@ -1,61 +1,49 @@
 import React , { useEffect, useState } from 'react'
-import DataGrid from './DataGrid'
-import './App.css'
+import DataGrid from './components/DataGrid'
+import MapView from './components/MapView'
+//import CSVUploader from './components/CSVUploader'
+import Navbar from './Layout/Navbar'
+import Footer from './Layout/Footer'
+
+import styles from './App.module.css'
 
 const parseCSV = (text: string) => {
   const [header, ...content] = text.split('\n');
   const allHeaders = header.split(',');
+  const data = content.map(line => line.split(','));
 
-  // Definir quais colunas você quer manter
-  //37 - clock.currentTime
-  //38 - clock.currentDate
-  //84 - gps.lat
-  //85 - gps.lon
-  //121 - temperature.temperature1
-  //122 - temperature.temperature2
-  const columnsToKeep = [37, 38, 84, 85, 121, 122]
-  const columnsNames = [
-    'clock.currentTime',
-    'clock.currentDate',
-    'gps.lat',
-    'gps.lon',
-    'temperature.temperature1',
-    'temperature.temperature2'
-  ]
+  const columnsToKeep = [16,17,84,85,37,38,32]
 
-  // Filtrar os headers
   const filteredHeaders = columnsToKeep.map(index => allHeaders[index]);
-
-  // Filtrar os dados
+  const filteredData = data.map(row => columnsToKeep.map(index => row[index]));
 
   const result = {
-    header: [],
-    data: [],
+    header: filteredHeaders,
+    data: filteredData
   };
+  
+  console.log(result)
+  return result
+}
 
-  const [header, ...content] = text.split('\n');
-  result.header = header.split(',');
-  content.forEach((item) => {
-    result.data.push(item.split(','));
-  });
-  console.log(result);
-  return result;
-};
-    
 export default function App() {
   const [csv, setCsv] = useState(null)
   useEffect(() => {
     fetch('../public/2025-01-24 12-14-36 vehicle117.csv')
     .then(r=> r.text())
     .then(text => {
-      setCsv(parseCSV(text));
+      setCsv(parseCSV(text))
     });
   }, []);
 
   return (
-    <div className="App">
-      <h1>CSV Report Generator</h1>
-      <DataGrid csv={csv} />
+    <div className={styles.app}>
+      <Navbar />
+      <div className={styles.content}>
+        <MapView csv={csv} />
+        <DataGrid csv={csv} />
+      </div>
+      <Footer />
     </div>
   )
 }
