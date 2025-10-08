@@ -1,0 +1,11 @@
+.app {
+    background-color: #dbdbdb;
+}
+
+.content {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
