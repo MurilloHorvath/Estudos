@@ -42,11 +42,11 @@ const DataGrid = ({ csv }) => {
 
     const flightData = csv.data
     .map(row => ({
-        distance: parseFloat(row[0]),
-        duration: timeToSeconds(row[1]),
-        daytime: row[4],
-        daydate: row[5],
-        consume: parseFloat(row[6])
+        distance: parseFloat(row['flightDistance']),
+        duration: timeToSeconds(row['flightTime']),
+        daytime: row['clock.currentTime'],
+        daydate: row['clock.currentDate'],
+        consume: parseFloat(row['battery0.percentRemaining'])
     })).filter(item => item.duration > 0); // filtrar apenas duracoes validas
 
     // Encontrar a maior distância

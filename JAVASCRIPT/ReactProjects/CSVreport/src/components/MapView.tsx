@@ -100,33 +100,31 @@ const rectangleOptions = {
 const MapView = ({ csv }) => {
   const [flightPath, setFlightPath] = useState([]);
   const [mapBounds, setMapBounds] = useState(null);
-  const [mapCenter, setMapCenter] = useState({ lat: -23.2557, lng: -47.2987 });
+  const [mapCenter, setMapCenter] = useState({ lat: 0, lng: 0 });
   const [mapLoaded, setMapLoaded] = useState(false);
 
   // Sua API Key do Google Maps
-  const GOOGLE_MAPS_API_KEY = '';
+  const GOOGLE_MAPS_API_KEY = 'AIzaSyApA-l-T5fPC57qhQ_n4NywH_DydemaCLo';
 
   useEffect(() => {
     if (!csv || !csv.data || csv.data.length === 0) {
-      console.log('CSV data not available or empty');
+      console.log(`No CSV data available`);
       return;
     }
 
     try {
       // Extrair coordenadas do CSV - ajuste os índices conforme necessário
       const coordinates = csv.data
-        .filter(row => row[2] && row[3] && !isNaN(parseFloat(row[2])) && !isNaN(parseFloat(row[3])))
+        .filter(row => row['gps.lat'] && row['gps.lon'] && !isNaN(parseFloat(row['gps.lat'])) && !isNaN(parseFloat(row['gps.lon'])))
         .map(row => ({
-          lat: parseFloat(row[2]),
-          lng: parseFloat(row[3])
+          lat: parseFloat(row['gps.lat']),
+          lng: parseFloat(row['gps.lon'])
         }));
 
       if (coordinates.length === 0) {
         console.log('No valid coordinates found');
         return;
       }
-
-      console.log('Coordinates extracted:', coordinates.length);
 
       // Calcular bounding box da área do voo
       const lats = coordinates.map(coord => coord.lat);
