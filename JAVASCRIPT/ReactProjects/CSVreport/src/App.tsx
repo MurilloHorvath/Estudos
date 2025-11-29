@@ -31,13 +31,12 @@ export default function App() {
     <div className={styles.app}>
       <Navbar />
       <div className={styles.content}>
-        {!csv ? <p>Carregando...</p> : (
+        {!csv ? <CSVUploader onCSVProcessed={handleCSVData}/> : (
           <div>
             <MapView csv={csv} />
             <DataGrid csv={csv} />
           </div>
         )}
-        <CSVUploader onCSVProcessed={handleCSVData}/>
       </div>
       <Footer />
     </div>
