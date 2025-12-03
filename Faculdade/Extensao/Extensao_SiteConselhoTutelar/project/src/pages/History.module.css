@@ -1,0 +1,36 @@
+.history {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #F6EDE8;
+}
+
+.historyTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.biography {
+
+}
+
+.biographyImage {
+    float: left;
+    margin-right: 1rem;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.biographyText {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.biographyParagraph {
+    margin-bottom: 1rem;
+}

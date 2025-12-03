@@ -3,6 +3,7 @@ import Navbar from "./layout/Navbar"
 import Footer from "./layout/Footer"
 import Container from "./layout/Container"
 import Home from "./pages/Home"
+import History from "./pages/History"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
 
@@ -13,6 +14,7 @@ function App() {
       <Container>
         <Routes>
           <Route path="/" element={<Home/>} ></Route>
+          <Route path="/History" element={<History/>} ></Route>
           <Route path="/Services" element={<Services/>} ></Route>
           <Route path="/Contact" element={<Contact/>} ></Route>
         </Routes>

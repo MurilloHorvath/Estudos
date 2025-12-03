@@ -6,7 +6,8 @@ function Footer() {
     return(
         <footer className={styles.footer}>
             <img src={assin} alt="img" className={styles.assin}/>
-            <p className={styles.text}>Site desenvolvido por Murillo Silveira Horvath</p>
+            <p className={styles.text}>Site desenvolvido por</p>
+            <p className={styles.text}>Murillo Silveira Horvath</p>
         </footer>
     )
 }
