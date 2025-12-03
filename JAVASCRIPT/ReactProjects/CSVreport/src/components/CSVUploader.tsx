@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Papa from "papaparse"
 
+import styles from './CSVUploader.module.css'
+
 interface CSVData {
   key: string;
 }
@@ -48,10 +50,14 @@ const CSVUploader: React.FC<CSVUploaderProps> = ({ onCSVProcessed }) => {
     }
 
     return (
-        <div>
-            <h2>Upload de CSV</h2>
-            <input type="file" accept=".csv" onChange={handleFileUpload} />
-            {fileName && <p>Arquivo selecionado: {fileName}</p>}
+        <div className={styles.container}>
+            <h2 className={styles.title}>Upload CSV</h2>
+            <div className={styles.fileInputContainer}>
+                <input type="file" accept=".csv" onChange={handleFileUpload} className={styles.fileInput} id="file-upload"/>
+                <label htmlFor="file-upload" className={styles.fileButton}>
+                    <span class="material-symbols-outlined">cloud_upload</span>Upload File
+                </label>
+            </div>
         </div>
     )
 }

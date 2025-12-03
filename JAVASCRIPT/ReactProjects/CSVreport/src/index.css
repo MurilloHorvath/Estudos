@@ -6,7 +6,7 @@
 }
 
 html, body, #root {
-  background-color: #FAFAFA;
+  background-color: #dbdbdb;
   height: 100%;
   display: flex;
   flex-direction: column;
