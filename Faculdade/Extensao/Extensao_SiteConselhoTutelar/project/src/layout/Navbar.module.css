@@ -1,87 +1,211 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    padding: 1em;
-}
-
-.list {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.item {
-    margin-right: 1em;
     padding: 1rem;
-    border: 1px solid #38D7BB;
-    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.item a {
-    color: #505050;
-    text-decoration: none;
-}
-
-.item a:hover{
-    color: #f60382;
+.divTitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
-    width: 75px;
     height: 75px;
+    width: auto;
 }
 
-.title1{
-    font-size: 1em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: #252525;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: red;
+.divTitleText {
+  display: flex;
+  flex-direction: column;
 }
 
-.title2{
-    font-size: 2.5em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: #252525;
+.title1 {
+  font-size: 1rem;
+  margin: 0;
+
+  color: #333;
 }
 
-.redtitle{
-    color: #ca2a56;
+.title2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+  display: flex;
+  align-items: center;
 }
 
-/* Media Query para Mobile */
+.redtitle {
+  color: #e63946;
+  margin: 0;
+  padding: 0;
+}
+
+.divMenu {
+  display: flex;
+  align-items: center;
+}
+
+/* Botão do menu hamburguer */
+.menuButton {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.menuButton .menuicon {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menuButton.active{
+  display: none;
+}
+
+/* Menu desktop */
+.desktopMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.desktopMenu .item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.desktopMenu .item a:hover {
+  color: #e63946;
+}
+
+/* Overlay da sidebar */
+.sidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sidebarOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebarHeader {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebarContent {
+  padding: 20px;
+  flex: 1;
+}
+
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarItem {
+  margin-bottom: 20px;
+}
+
+.sidebarItem a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s ease;
+}
+
+.sidebarItem a:hover {
+  color: #e63946;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .list {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1em;
-    }
-    
-    .item {
-        margin-right: 0;
-        margin-bottom: 0.5em;
-        width: 80%;
-        text-align: center;
-    }
-    
-    .logo {
-        margin-bottom: 0.5em;
-    }
-    
-    .title {
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 0.5em;
-    }
+  .menuButton {
+    display: flex;
+  }
+  
+  .desktopMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .sidebarOverlay {
+    display: none;
+  }
 }

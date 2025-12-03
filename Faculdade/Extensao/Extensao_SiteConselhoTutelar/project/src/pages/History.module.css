@@ -12,7 +12,7 @@
 }
 
 .biography {
-
+    margin-bottom: 2rem;
 }
 
 .biographyImage {
@@ -33,4 +33,12 @@
 
 .biographyParagraph {
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .biographyImage {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
 }
